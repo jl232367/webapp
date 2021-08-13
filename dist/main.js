@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://librarybuild/./src/index.js?");
+eval("//import * as weatherApiInfo from \"./jsmods/apirequest\";\nconst api = \"c0cb2ed6b02d22efdde40b0bedf9268e\";\nconst zip = 37604;\n// function to get the weather by zipcode\nconst getWeatherByZip = async (zipCode) => {\n    const requestByZip = \"http://api.openweathermap.org/data/2.5/weather?q=\" + zip + \"&appid=\" + api; \n    try {\n        const response = await fetch(requestByZip);\n        const weatherData = await response.json();\n        return console.log(weatherData);\n    } catch(err) {\n        alert(err);\n    }\n}\n\n//weatherApiInfo.getWeatherByZip(37604);\n\n//# sourceURL=webpack://librarybuild/./src/index.js?");
 
 /***/ })
 
